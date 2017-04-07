@@ -75,7 +75,8 @@ open(MSG, "<", $sndmsgfile)
 close(MSG);
 
 my $host = hostname;					# Local host name
-my $hostaddr = inet_ntoa(scalar gethostbyname($host));	# Local host IP addr
+#my $hostaddr = inet_ntoa(scalar gethostbyname($host));	# Local host IP addr
+my $hostaddr = inet_ntoa(scalar 10.0.0.10);
 
 print "local host addr = $hostaddr\n";
 
